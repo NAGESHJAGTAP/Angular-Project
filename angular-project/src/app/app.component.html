@@ -1,0 +1,50 @@
+<!-- <h1>coding gita</h1>
+
+<table class="table">
+  <tr class="table-header">
+    <td>ID</td>
+    <td>Name</td>
+    <td>Username</td>
+    <td>Email</td>
+  </tr>
+  <tr *ngFor="let user of users">
+    <td>{{ user.id }}</td>
+    <td>{{ user.name }}</td>
+    <td>{{ user.username }}</td>
+    <td>{{ user.email }}</td>
+  </tr>
+</table> -->
+
+
+
+
+<h1>Users List</h1>
+
+<!-- Form to Add User -->
+<div class="form-box">
+  <h3>Add New User</h3>
+  <form (ngSubmit)="addUser()">
+    <input [(ngModel)]="newUser.name" name="name" placeholder="Name" required />
+    <input [(ngModel)]="newUser.username" name="username" placeholder="Username" required />
+    <input [(ngModel)]="newUser.email" name="email" placeholder="Email" required />
+    <button type="submit">Add User</button>
+  </form>
+</div>
+
+<!-- Table to show users -->
+<table class="table">
+  <tr class="table-header">
+    <td>ID</td>
+    <td>Name</td>
+    <td>Username</td>
+    <td>Email</td>
+  </tr>
+  <tr *ngFor="let user of users">
+    <td>{{ user.id }}</td>
+    <td>{{ user.name }}</td>
+    <td>{{ user.username }}</td>
+    <td>{{ user.email }}</td>
+  </tr>
+</table>
+
+
